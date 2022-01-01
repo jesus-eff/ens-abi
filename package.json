@@ -1,0 +1,31 @@
+{
+  "name": "ens-abi",
+  "version": "0.1.0",
+  "description": "simple tool to encode/decode content hash for ENSIP-4 (EIP 205) compliant ENS Resolvers",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jesus-eff/ens-abi"
+  },
+  "scripts": {
+    "build": "browserify ./src/index.js --s contentHash > ./dist/index.js",
+    "demo": "static .",
+    "deploy-demo": "echo \"surge demo https://content-hash.surge.sh\"",
+    "test": "mocha",
+    "lint": "npx eslint ."
+  },
+  "author": "jesus-eff",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ethereum",
+    "ens",
+    "ensip-4",
+    "eip-205",
+    "resolver",
+    "abi"
+  ]
+}
